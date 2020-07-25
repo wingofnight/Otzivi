@@ -49,7 +49,7 @@ namespace ChatServer
                         string name = mes.Substring(0, index);//записываем кол-во символов из строки
                         mes = mes.Substring(index + 1);
 
-                        index = name.IndexOf(".");
+                        index = name.IndexOf(";");
                         string fileName = name.Substring(0, index);
                         if (index == -1) continue;
                         name = name.Substring(index + 1);
