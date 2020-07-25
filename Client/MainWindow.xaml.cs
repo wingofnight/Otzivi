@@ -45,7 +45,7 @@ namespace ServerChatX
                     socket.Connect(ipPoint);
                     
                   
-                        string message = FORM + "." +  email + ":" + messageClient;                    
+                        string message = FORM + ";" +  email + ":" + messageClient;                    
 
                         byte[] data = Encoding.Unicode.GetBytes(message);
                         socket.Send(data);
